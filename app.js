@@ -22,9 +22,6 @@ const limiter= rateLimit({windowMs:15*60*1000,max:3000})
 app.use(limiter);
 
 
-// Mongo DB Database Connection
-//let URI=
-//let Option={user:'sujonhowlader',pass:'sujonhowlader',autoIndex:true}
 
 mongoose.connect(process.env.DATABASE).then(()=>{
     console.log("Success")
