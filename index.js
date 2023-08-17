@@ -1,5 +1,5 @@
 const app=require("./app")
-
-app.listen(8090,function (){
-    console.log("Success")
+const  PORT=process.env.PORT || 9090
+app.listen(PORT,function (){
+    console.log(`Server Port NO ${PORT}`)
 })
